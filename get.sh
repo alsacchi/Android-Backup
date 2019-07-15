@@ -1,5 +1,5 @@
 #!/bin/zsh
-CMD=(dialog --clear --title "Package List" --menu "Select one:" 40 76 20)
+CMD=(dialog --clear --title "Package List" --menu "Select one:" 76 80 40)
 LIST=()
 adb shell 'pm list packages -f' | sed -e 's/.*=//' | sort | \
 while read i
